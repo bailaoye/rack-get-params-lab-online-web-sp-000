@@ -27,6 +27,7 @@ class Application
       if @@items.include?(item_to_add)
         @@items << item_to_add
       else
+        "We don't have that item"
       end
     else
       resp.write "Path Not Found"
